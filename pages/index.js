@@ -19,20 +19,12 @@ import Section from '../components/section'
 import { IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 
-const PublicationItem = ({ title, authors, venue, year, href }) => {
+const PublicationItem = ({ title, authors, venue, year, doi }) => {
   const mutedColor = useColorModeValue('gray.500', 'gray.500')
   const subColor = useColorModeValue('gray.600', 'gray.400')
   return (
-    <Box mb={3} fontSize="sm">
-      <Text fontWeight="500">
-        {href ? (
-          <Link href={href} target="_blank">
-            {title}
-          </Link>
-        ) : (
-          title
-        )}
-      </Text>
+    <Box mb={4} fontSize="sm">
+      <Text fontWeight="500">{title}</Text>
       {authors && (
         <Text color={mutedColor} fontSize="xs">
           {authors}
@@ -41,6 +33,14 @@ const PublicationItem = ({ title, authors, venue, year, href }) => {
       <Text color={subColor}>
         {venue} &middot; {year}
       </Text>
+      {doi && (
+        <Text color={mutedColor} fontSize="xs">
+          DOI:{' '}
+          <Link href={`https://doi.org/${doi}`} target="_blank">
+            {doi}
+          </Link>
+        </Text>
+      )}
     </Box>
   )
 }
@@ -178,7 +178,13 @@ const Home = () => (
           authors={<><Text as="span" textDecoration="underline">Huy-Hoang Trinh</Text>, Khai-Minh Ma, Tran-Bao-Thuong Cao, Duc-Hung Le</>}
           venue="ATC 2025, Hanoi University of Industry (HaUI)"
           year="2025"
-          href="https://doi.org/10.1109/ATC67618.2025.11268635"
+          doi="10.1109/ATC67618.2025.11268635"
+        />
+        <PublicationItem
+          title="ASIC Implementation of A Low-Power Multi-Layer Perceptron Neuron Network for Handwritten Digit Classification on 32nm CMOS Process"
+          authors={<>The-Hung Pham, Nguyen-Thien-Bao Tran, Minh-Anh Nguyen, <Text as="span" textDecoration="underline">Huy-Hoang Trinh</Text>, Duc-Hung Le</>}
+          venue="MCT4SD 2025, Manila, Philippines (Springer)"
+          year="2025"
         />
         <PublicationItem
           title="Thiết kế hệ thống bảo mật dữ liệu dựa trên CPU RISC-V 32-bit trên FPGA và công nghệ SKY130"

@@ -25,7 +25,7 @@ const PostCard = ({ slug, title, date, description }) => {
         transition="background 0.15s"
       >
         <Text fontSize="sm" color={dateColor} mb={1}>
-          {new Date(date).toLocaleDateString('vi-VN', {
+          {new Date(date).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
             day: 'numeric'

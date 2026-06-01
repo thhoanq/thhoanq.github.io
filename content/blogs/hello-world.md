@@ -1,18 +1,17 @@
 ---
 title: "Hello World"
 date: "2026-05-28"
-description: "Bài viết đầu tiên của mình 😆"
+description: "My first blog 😆"
 tags: ["general"]
 ---
 
-## Xin chào!
+## Hi!
 
-Mình là Hoàng và là một người học đang cố gắng cải thiện bản thân từng ngày.
+My name is Hoang, and I am a learner making efforts to enhance myself every day.
 
+## Blog's purpose
 
-## Dự định
+The main purpose of this blog is improving many of my defects and storing interesting things that I learned. The topic is anything. Sometimes it will have the support of AI (a little bit). Hope you are not being harsh on me too much <3.
 
-Mình tạo blog này với mục đích chính là cải thiện nhiều khuyết điểm của bản thân và lưu lại những gì hay ho mình học được. Chủ đề sẽ là bất cứ cái gì và có thể sẽ nhờ AI hỗ trợ viết **một chút**. Mong những người đọc được đừng quá hà khắc với mình nhé <3.
-
-Thân ái và trân trọng,  
-Trịnh Huy Hoàng
+With affections and respects,
+Huy-Hoang Trinh

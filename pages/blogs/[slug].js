@@ -12,7 +12,7 @@ const BlogPost = ({ title, date, contentHtml }) => {
     <Layout title={title}>
       <Container>
         <Text fontSize="sm" color={dateColor} mb={1}>
-          {new Date(date).toLocaleDateString('vi-VN', {
+          {new Date(date).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
